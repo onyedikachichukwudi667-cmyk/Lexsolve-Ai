@@ -1,0 +1,12 @@
+# Copy to .dev.vars for local server secrets. In production use:  npx wrangler secret put NAME
+# Any OpenAI-compatible provider works. Free default: Google Gemini's OpenAI-compatible endpoint.
+# Check Google AI Studio for the current model names before you set these.
+AI_API_KEY=
+AI_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai
+AI_MODEL=gemini-2.5-flash
+EMBED_MODEL=gemini-embedding-001
+
+# OpenLegal / CaseWin. Leave unset until the developer docs are verified and
+# src/lib/research/sources/openlegal.ts is implemented against them.
+OPENLEGAL_API_KEY=
+OPENLEGAL_VERIFIED=false

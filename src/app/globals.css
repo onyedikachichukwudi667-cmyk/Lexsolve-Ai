@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0b1f3a;
+  --color-navy-soft: #16315a;
+  --color-gold: #b8962e;
+  --color-gold-soft: #f4ecd2;
+  --color-paper: #ffffff;
+  --color-ink: #1b2430;
+  --color-muted: #5b6676;
+  --color-line: #e3e7ee;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-serif), Georgia, serif;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 44px; padding: 0 1.1rem; border-radius: .6rem; font-weight: 600; font-size: .95rem; transition: opacity .15s; cursor: pointer; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary { background: var(--color-navy); color: white; }
+.btn-gold { background: var(--color-gold); color: white; }
+.btn-ghost { border: 1px solid var(--color-line); background: white; color: var(--color-navy); }
+.field { width: 100%; min-height: 44px; border: 1px solid var(--color-line); border-radius: .6rem; padding: .6rem .8rem; font-size: 1rem; background: white; }
+.field:focus { outline: 2px solid var(--color-gold); outline-offset: 0; }
+.card { border: 1px solid var(--color-line); border-radius: .9rem; background: white; padding: 1rem; }
+.label { display: block; font-size: .8rem; font-weight: 600; color: var(--color-muted); margin-bottom: .3rem; }
